@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+}
+
+.box {
+    width: 45%;
+    background-color: #ccc;
+    padding: 20px;
+    float: left;
+    margin: 2.5%;
+    box-sizing: border-box;
+}

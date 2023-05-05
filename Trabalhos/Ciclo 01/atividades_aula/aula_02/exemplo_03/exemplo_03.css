@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.box {
+    flex: 0 0 48%;
+    background-color: #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.box:nth-child(odd) {
+    background-color: #eee;
+}

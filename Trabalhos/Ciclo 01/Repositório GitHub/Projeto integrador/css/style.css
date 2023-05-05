@@ -1,0 +1,118 @@
+/* estilo para a tag body da tela inicial */
+body {
+    background-color: #e8e5e5;
+}
+
+/* estilo para o container principal da tela inicial */
+.container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* estilo para o menu da tela inicial */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* estilo para as imagens da tela inicial */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.images img {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+}
+
+/* estilo para os elementos de texto da tela inicial*/
+.text {
+    margin-top: 40px;
+}
+
+.text h1, .form h1, .resultados h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* estilo para o formulário de avaliação */
+form, #usuarios-cadastrados {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type="submit"], input[type="button"] {
+    background-color: #4859bf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #213e68;
+}

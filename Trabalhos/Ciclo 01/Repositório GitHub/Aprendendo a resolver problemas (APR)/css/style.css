@@ -1,0 +1,83 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+    
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+    
+form, #lista-consultas, #lista-medicamentos {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#consultas, #medicamentos {
+    font-weight: bold;
+}
+    
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+    
+input, button {
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+input[type="date"], select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+}
+    
+button[type="button"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+    
+button[type="button"]:hover {
+    background-color: #3E8E41;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4c6faf;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #31508a;
+}

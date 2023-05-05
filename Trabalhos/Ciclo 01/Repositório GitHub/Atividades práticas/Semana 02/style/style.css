@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Estilização da tela de formulário */
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilização da tela de imagens */
+.image_container {
+    display: flex;
+    margin: 0;
+    width: 50%;
+    text-align: center;
+}
+
+img, .harry_potter_image, .lord_of_the_rings_image, .star_wars_image {
+    margin-bottom: 30px;
+    margin-right: 30px;
+    border: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: red;
+    width: 300px;
+    height: 300px;
+}
+
+/* Estilização da tela de tabela */
+table {
+    margin: 10 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+caption {
+    font-weight: bold;
+}
+
+/* Estilização da tela de texto */
+ol {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+    
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+    
+li:first-child {
+    margin-top: 0;
+}
+    
+li:last-child {
+    margin-bottom: 0;
+}
+    
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+    
+ul li:before {
+    content: "\2022";
+    color: #666;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+    
+strong {
+    font-weight: bold;
+}
+    
+em {
+    font-style: italic;
+}
+    
+u {
+    text-decoration: underline;
+}
+
+
+

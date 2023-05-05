@@ -1,0 +1,75 @@
+<!-- 
+    Curso de Engenharia de Software - UniEvangélica 
+    Disciplina de Programação Web
+    Dev: Antônio CLaudio Ferreira Filho (2110854)
+    Data: 07/03/2023
+-->
+
+<!--
+    Principais tags HTML utilizadas para construir formulários
+    1) <form> = tag principal para criar um formulário
+    2) <input> = tag usada para criar elementos de entrada de dados em um formulário
+        <input type="checkbox" id="-" name="-[]" value='-'> = cria uma caixa de seleção, permitindo que o usuário selecione várias opções
+        <input type="radio" id="-" name="-" value="-"> = cria uma caixa de seleção, permitindo que o usuário selecione uma única opção
+    3) <label> = tag usada para inserir uma descrição ou rótulo para um elemento de formulário
+    4) <select> = tag usada para criar uma lista suspensa (dropdown)
+    5) <option> = tag usada para definir as opções disponíveis na lista suspensa (dropdown)
+    6) <textarea> = tag usada para criar uma área de texto
+    7) <button> = tag usada para criar um botão clicável
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Elementos de formulário em HTML</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <center>
+        <h1>Estudo cinematográfico</h1>
+    </center>
+    <div>
+        <p><strong>Formulário de cadastro de filmes:</strong></p>
+        <form>
+            <div>
+                <label for="nome_filme">Nome do filme:</label>
+                <input type="text" name="nome_filme" id="nome_filme">
+            </div><br>
+            
+            <div>
+                <label for="ano_lancamento">Ano de lançamento:</label>
+                <input type="number" name="ano_lancamento" id="ano_lancamento">
+            </div><br>
+            
+            <div>
+                <label for="categoria[]">Categoria:</label>
+
+                <input type="checkbox" name="categoria[]" id="categoria_comedia" value="comedia">
+                <label for="categoria_comedia">Comédia</label>
+                <input type="checkbox" name="categoria[]" id="categoria_aventura" value="aventura">
+                <label for="categoria_aventura">Aventura</label>
+                <input type="checkbox" name="categoria[]" id="categoria_acao" value="acao">
+                <label for="categoria_acao">Ação</label>
+                <input type="checkbox" name="categoria[]" id="categoria_drama" value="drama">
+                <label for="categoria_drama">Drama</label>
+                <input type="checkbox" name="categoria[]" id="categoria_suspense" value="suspense">
+                <label for="categoria_suspense">Suspense</label>
+                <input type="checkbox" name="categoria[]" id="categoria_terror" value="terror">
+                <label for="categoria_terror">Terror</label>
+            </div><br>
+
+            <div>
+                <label for="classificacao_indicativa">Indicado somente para maiores de 18 anos?</label>
+
+                <input type="radio" name="classificacao_indicativa" id="classificacao_indicativa_sim" value=1>
+                <label for="classificacao_indicativa_sim">Sim</label>
+                <input type="radio" name="classificacao_indicativa" id="classificacao_indicativa_nao" value=0>
+                <label for="classificacao_indicativa_nao">Não</label>
+            </div><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
