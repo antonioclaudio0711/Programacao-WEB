@@ -1,0 +1,58 @@
+#box {
+    display: flex;
+    justify-content: center;
+}
+
+#first-form, #second-form {
+    padding: 10px;
+    margin: 10px;
+    border: solid rgb(198, 196, 196) 0.1px;
+    width: 50%;
+}
+
+input[type="text"], select {
+    margin: 8px 0px 8px 0px;
+    width: 92%;
+    padding: 15px;
+    border: solid rgb(198, 196, 196) 0.1px;
+    border-radius: 5px;
+    
+    font-weight: bold;
+}
+
+button {
+    margin: 8px 0px 8px 0px;
+    width: 20%;
+    padding: 12px;
+    background-color: rgb(72, 244, 72);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+#table {
+    border-collapse: collapse;
+    border: solid rgb(198, 196, 196) 0.1px;
+    width: 100%;
+}
+
+th {
+    background-color: rgb(198, 196, 196);
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    border-bottom: solid rgb(198, 196, 196) 0.1px;
+    padding: 12px;
+    text-align: left;
+}
+
+#text-items {
+    border-collapse: collapse;
+    border: solid rgb(198, 196, 196) 0.1px;
+    width: 95%;
+    margin-top: 10px;
+    padding: 10px;
+}
