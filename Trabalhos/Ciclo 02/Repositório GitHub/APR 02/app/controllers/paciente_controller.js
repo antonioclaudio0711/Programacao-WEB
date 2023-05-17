@@ -1,11 +1,11 @@
-const {Paciente:Paciente} = require('../models');
+const {Paciente:Paciente, Agendamento:Agendamento} = require('../models');
 
 class PacienteController {
     constructor() {};
 
-    async encontrarTodosPaciente (req, res) {
+    async encontrarTodosPacientes (req, res) {
         try {
-            const pacientesEncontrados = await Paciente.findAll();
+            const pacientesEncontrados = await Paciente.findAll({include: {model: Agendamento, as: 'agendamentos'}});
             res.status(200).json(pacientesEncontrados);
 
         } catch (error) {
@@ -16,7 +16,7 @@ class PacienteController {
     async encontrarPacientesPorId (req, res) {
         try {
             const id_paciente = req.params.id_paciente;
-            const pacienteEncontrado = await Paciente.findByPK(id_paciente);
+            const pacienteEncontrado = await Paciente.findByPK(id_paciente, {include: {model: Agendamento, as: 'agendamentos'}});
 
             if (pacienteEncontrado) {
                 res.status(200).json(pacienteEncontrado);

@@ -4,7 +4,7 @@ const sequelize = require('../../database');
 const Paciente = sequelize.define('Paciente', {
     id_paciente: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        autoIncrement: true,
         primaryKey: true
     },
     nome_paciente: {
