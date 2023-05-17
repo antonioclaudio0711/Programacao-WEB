@@ -1,0 +1,18 @@
+{
+  "name": "arp_02",
+  "version": "1.0.0",
+  "description": "Aprendendo a resolver problemas (ciclo 02)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.3.1",
+    "nodemon": "^2.0.22",
+    "prisma": "^4.14.0",
+    "sequelize": "^6.31.1"
+  }
+}
