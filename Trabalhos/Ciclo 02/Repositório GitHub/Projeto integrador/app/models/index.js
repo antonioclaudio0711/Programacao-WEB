@@ -1,8 +1,10 @@
 const sequelize = require('../../database');
 const Administrador = require('./Administrador');
+const Usuario = require('./Usuario');
 
 const models = {
-    Administrador
+    Administrador,
+    Usuario
 };
 
 const options = {
