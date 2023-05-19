@@ -1,11 +1,11 @@
-const {Usuario: Usuario} = require('../models');
+const {Usuario: Usuario, Evento: Evento} = require('../models');
 
 class UsuarioController {
     constructor() {};
 
     async encontrarTodosUsuarios(req, res) {
         try {
-            const usuariosEncontrados = await Usuario.findAll();
+            const usuariosEncontrados = await Usuario.findAll({include: {model: Evento, as: 'evento'}});
             res.status(200).json({usuariosEncontrados});
 
         } catch (error) {
@@ -16,7 +16,7 @@ class UsuarioController {
     async encontrarUsuariosPorId(req, res) {
         try {
             const id_user = req.params.id_user;
-            const usuarioEncontrado = await Usuario.findByPk(id_user);
+            const usuarioEncontrado = await Usuario.findByPk(id_user, {include: {model: Evento, as: 'evento'}});
 
             if (usuarioEncontrado) {
                 response.status(200).json(usuarioEncontrado);
