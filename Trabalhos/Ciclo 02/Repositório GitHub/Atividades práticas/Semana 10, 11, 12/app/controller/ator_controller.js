@@ -1,12 +1,12 @@
-const {Ator} = require('../model');
+const {Ator: Ator, Filme: Filme} = require('../model');
 
 class AtorController {
     constructor() {};
 
     async findAll(req, res) {
         try {
-            const allItems = await Ator.findAll();
-            res.status(200).json(allItems);
+            const allItems = await Ator.findAll({include: {model: Filme, as: 'filmes'}});
+            res.status(200).json(allItems,);
         } catch (error) {
             res.status(500).json({error: error.message});
         }
@@ -15,7 +15,7 @@ class AtorController {
     async findById(req, res) {
         try {
             const id_ator = req.params.id_ator;
-            const itemsById = await Ator.findByPk(id_ator);
+            const itemsById = await Ator.findByPk(id_ator, {include: {model: Filme, as: 'filmes'}});
 
             if (itemsById) {
                 res.status(200).json(itemsById);   

@@ -11,6 +11,14 @@ const Filme = sequelize.define('Filme', {
         type: DataTypes.STRING,
         allowNull: false,
         primaryKey: false
+    },
+    fk_ator: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'Ator',
+            key: 'id_ator'
+        }
     }
 })
 

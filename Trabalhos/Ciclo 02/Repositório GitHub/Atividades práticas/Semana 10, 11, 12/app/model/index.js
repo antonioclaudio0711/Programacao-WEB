@@ -7,6 +7,17 @@ const models = {
     Filme
 };
 
-sequelize.sync({alter: true});
+Ator.hasMany(Filme, {foreignKey: 'fk_ator', as: 'filmes'});
+Filme.belongsTo(Ator, {foreignKey: 'fk_ator', as: 'atores'});
+
+const options = {
+    alter: true,
+    beforeAssociate: async (sequelizeInstance) => {
+        await Paciente.init({}, {sequelize: sequelizeInstance});
+        await Paciente.sync();
+    }
+};
+
+sequelize.sync(options);
 
 module.exports = models;
